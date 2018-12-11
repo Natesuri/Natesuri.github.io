@@ -1,1 +1,56 @@
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+  background: #2d3436;
+  // background: url('../../public/images/ASHOKON915.jpg');
+  // background-repeat: no-repeat;
+  // background-size: contain;
+}
+
+header {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.btn-link {
+  color: #ecf0f1;
+}
+
+// .btn-link :hover {
+//   color: #00cec9;
+// }
+
+.signature {
+  color: #ecf0f1;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100px;
+  justify-content: center;
+  // height: 120px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (max-width: 490px) {
+  .signature {
+    font-size: 60px;
+  }
+}
+
+.my-title {
+  color: #ecf0f1;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+  margin: 0 auto;
+  // padding: 0;
+}
+
+// .hero {
+//   background: url('../../public/images/ASHOKON915.jpg');
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   // width: 100vw;
+//   height: 1000px;
+// }
