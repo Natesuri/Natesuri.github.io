@@ -1,31 +1,90 @@
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+[class^="devicon-"],
+[class*=" devicon-"] {
+  line-height: 2;
+}
+
 body {
   background: #2d3436;
-  // background: url('../../public/images/ASHOKON915.jpg');
-  // background-repeat: no-repeat;
-  // background-size: contain;
 }
+
+// @media (min-width: 992px) {
+//   header {
+//     padding: 156px 0 100px;
+//   }
+// }
 
 header {
-  padding: 0;
-  margin: 0 auto;
+  padding: 156px 0 100px;
 }
 
-.btn-link {
-  color: #ecf0f1;
+i {
+  font-size: 100px;
+  // margin: 10px;
+  transition: font-size 1s;
 }
 
-// .btn-link :hover {
-//   color: #00cec9;
+.resume {
+  width: 100%;
+}
+
+// .dark {
+//   background-color: #2d3436;
 // }
+
+// i:hover {
+//   transition: font-size 1s;
+//   // transition: color 1s;
+//   font-size: 105px;
+//   // color: red;
+// }
+
+#mySkills:hover {
+  i {
+    transition: font-size 1s;
+    // transition: color 1s;
+    font-size: 102px;
+    // color: red;
+  }
+}
+
+section.clear {
+  opacity: 0;
+}
+
+section.active {
+  opacity: 1;
+}
+
+section.view {
+  transition: opacity 1.5s;
+}
+
+.profile {
+  border-radius: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-white {
+  color: #ecf0f1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.emphasized-signature {
+  color: #2ecc71;
+  transition: color 2.5s;
+}
 
 .signature {
   color: #ecf0f1;
   display: flex;
   font-family: 'Montserrat', sans-serif;
-  font-size: 100px;
+  font-size: 80px;
   justify-content: center;
   // height: 120px;
   margin: 0 auto;
@@ -36,6 +95,42 @@ header {
   .signature {
     font-size: 60px;
   }
+}
+
+.contact {
+  color: #f1c40f;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+// $random-color: $link-colors[(Math.random)];
+//
+// $link-colors: [#8e44ad, #27ae60, #e74c3c];
+
+.email:hover,
+.email:focus {
+  color: #27ae60;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.emphasized {
+  color: #f1c40f;
+  transition: color 2.5s;
+}
+
+.github:hover,
+.github:focus {
+  color: #9b59b6;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.linkedIn:hover,
+.linkedIn:focus {
+  color: #e74c3c;
+  text-decoration: none;
+  transition: color 0.5s;
 }
 
 .my-title {

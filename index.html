@@ -6,36 +6,135 @@
 
       <!-- Do not add `link` tags-->
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
+      <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
       <!-- Do not add `script` tags-->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <header>
-        <nav class='row border no-gutters rounded'>
-          <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-light no-gutters active">
-              <input type="radio" name="options" id="option1" autocomplete="off" checked> About
-            </label>
-            <label class="btn btn-light no-gutters">
-              <input type="radio" name="options" id="option2" autocomplete="off"> Skills
-            </label>
-            <label class="btn btn-light no-gutters">
-              <input type="radio" name="options" id="option3" autocomplete="off"> Projects
-            </label>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand js-scroll-trigger" href="#page-top">Nate Suri</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" data-link="about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" data-link="skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" data-link="projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" data-link="contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger resume">Resume</a>
+              </li>
+            </ul>
           </div>
-          <!-- <button class='col-1 btn btn-link'>About</button>
-          <button class='col-1 btn btn-link'>Skills</button>
-          <button class='col-1 btn btn-link'>Projects</button> -->
-        </nav>
-      </header>
-      <main class='container'>
+        </div>
+      </nav>
+      <header>
         <div>
           <div class='col-md signature'>Nate Suri</div>
           <div class='w-100'></div>
           <div class='col-md my-title'>Web Developer && Storyteller</div>
         </div>
-      </main>
+      </header>
+      <section id="about" class='view active'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-lg-3 justify-content-center col'>
+              <img class='profile' src='./public/images/suri.jpg' alt=''>
+            </div>
+            <div class='text-white col-lg col'>
+              <h2>Howdy! I'm <span class='emphasis-1'>Nate Suri</span>.</h2>
+              <p>
+                I’m a <span class='emphasis-2'>storyteller</span> at heart with a mission to share the story of innovators and difference makers in my community and the world.
+                My experience in both filmmaking and programming gives me a unique perspective on how to create <span class='emphasis-3'>engaging and creative</span> web experiences.
+              </p>
+              <p>
+                I have 10 years experience in video editing, working professionally in documentary post-production for the last three years.
+                I'm currently enrolled in GA's Web Development Immersive program,
+                learning front-end and back-end programming languages like HTML, CSS, JavaScript, and Ruby.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class='view clear hidden'>
+        <div class='container'>
+          <div class='text-white col-12 justify-content-center'>
+            <h2>Skills</h2>
+            <div id='mySkills'>
+              <i class="devicon-html5-plain-wordmark"></i>
+              <i class="devicon-css3-plain-wordmark"></i>
+              <i class="devicon-javascript-plain"></i>
+              <i class="devicon-express-original-wordmark"></i>
+              <i class="devicon-ruby-plain-wordmark"></i>
+              <i class="devicon-rails-plain-wordmark"></i>
+              <i class="devicon-nodejs-plain-wordmark"></i>
+              <i class="devicon-mongodb-plain-wordmark"></i>
+              <i class="devicon-postgresql-plain-wordmark"></i>
+              <i class="devicon-sass-original"></i>
+              <i class="devicon-bootstrap-plain-wordmark"></i>
+              <i class="devicon-jquery-plain-wordmark"></i>
+              <i class="devicon-react-original"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class='view clear hidden'>
+        <div class='container'>
+          <div class='text-white col justify-content-center'>
+            <h2>Projects</h2>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+      </section>
+      <section id="contact" class='view clear hidden'>
+        <div class='container'>
+          <div class='text-white col justify-content-center'>
+            <h2>Contact</h2>
+            <p>I'd love to chat. Please reach out!</p>
+            <a class='contact email' href='mailto:natesuri@gmail.com?Subject=Hey%20Nate'>natesuri [at] gmail [dot] com</a>
+            <div class='w-100'></div>
+            <a class='contact github' href='https://github.com/Natesuri'>natesuri [on] github</a>
+            <div class='w-100'></div>
+            <!-- <a class='contact' href=''>natesuri [GA] profile</a> -->
+            <a class='contact linkedIn' href='https://www.linkedin.com/in/natesuri/'>natesuri [Linked] In</a>
+          </div>
+        </div>
+      </section>
+      <div class='modal fade' id='resumeModal' data-backdrop="static" data-keyboard=false>
+        <div class="modal-dialog">
+          <div class="modal-content dark">
+            <div class="modal-header">
+              <h5 class="modal-title" id="resumeModalLabel">Nate Suri Resume</h5>
+              <button type="button" class="close dismiss" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&otimes;</span>
+              </button>
+            </div>
+            <div id='resume' class="modal-body">
+                <img class='resume' src='./public/images/resume.png'>
+            </div>
+            <div>
+              <a class='btn' href='./public/images/NateSuriResume.pdf' download>Download</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary dismiss" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </body>
 </html>
