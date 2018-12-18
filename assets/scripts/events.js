@@ -3,7 +3,7 @@
 const addEventListeners = function () {
   $('a[data-link]').on('click', changeLayout)
   $('.resume').on('click', showResume)
-  $('#download-resume').on('submit', downloadResume)
+  // $('#download-resume').on('submit', downloadResume)
   setTimeout(() => {
     $('.emphasis-1').addClass('emphasized')
   }, 500)
@@ -37,9 +37,9 @@ const showResume = function () {
   $('#resumeModal').modal('show')
 }
 
-const downloadResume = function () {
-
-}
+// const downloadResume = function () {
+//
+// }
 
 // const downloadResume = function () {
 //   const downloading = browser.downloads.download({
