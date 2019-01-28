@@ -7,6 +7,10 @@
   line-height: 2;
 }
 
+a {
+  margin: 10px 0;
+}
+
 body {
   background: #2d3436;
 }
@@ -79,6 +83,33 @@ section.view {
 .emphasized-signature {
   color: #2ecc71;
   transition: color 2.5s;
+}
+
+.double {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 60px;
+}
+
+.text {
+  width: 600px;
+  margin: 20px 0;
+}
+
+.project-body {
+  height: 300px;
+  overflow-y: hidden;
+}
+
+.list {
+  padding: 20px 0;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .signature {

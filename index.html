@@ -93,11 +93,64 @@
         <div class='container'>
           <div class='text-white col justify-content-center'>
             <h2>Projects</h2>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            While building apps during GA's WDI bootcamp, I learned a lot about myself as a creator: I love challenging myself, I'm a quick learner, and I deeply care about code quality. I value having a well-architected MVP over a quickly assembled app with a few reach features, knowing that a refactor early on is much easier to execute than refactoring a much more complicated app. Over the course of the bootcamp, I developed a balanced work style that allowed me to dig in and get comfortable with new technologies, and design apps with a strong foundation for future growth. I'm very excited to keep growing as a developer and hone my skills as I continue my journey as a software engineer.
+            <div class='double'>
+              <div>
+              <div class="card bg-secondary" style="width: 18rem;">
+                <img class="card-img-top" src="public/images/npf.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">National Park Finder</h5>
+                  <p>Technologies Used:</p>
+                  <ul>
+                    <li>React</li>
+                    <li>Express</li>
+                    <li>Mongoose</li>
+                    <li>MongoDB</li>
+                    <li>Node</li>
+                    <li>Third-party APIs</li>
+                  </ul>
+                  <a href="https://natesuri.github.io/tic-tac-toe/" class="btn btn-light">Front End Repo</a>
+                  <a href="https://natesuri.github.io/tic-tac-toe/" class="btn btn-light">Backend Repo</a>
+                  <a href="https://natesuri.github.io/tic-tac-toe/" class="btn btn-light">Visit the Deployed Site</a>
+                </div>
+              </div>
+              <!-- <div class='list'>
+              </div> -->
+            </div>
+              <div class='text'>
+                <p>
+                  For my capstone project I set out to make a web application that would help a user find the best National Parks for them to visit. After discovering the plethora of data available on the National Parks Service (NPS) API, I knew I could quickly create a useful and informative app that leveraged all of that available data. The application would feature an "explore" view that would allow a user to browse through certain parks, a quiz to help filter out what parks to return to the user, use third-party APIs to display park weather and location, and allow a user to keep a list of their favorite parks.
+                </p>
+                <p>
+                  On top of configuring my Express back-end to communicate with three different third-party APIs, I also wanted to use React to build my front-end. I discovered that if I architected the client to store park data in state, React would quickly re-render views based on the current park that the user is exploring.
+                </p>
+                <p>
+                  I began the project by designing the app's data flow and architecture, and determining what features I should include in the app's MVP. I settled on an app where a user could explore a fixed list of parks, learn more about each park, toggle through each park's pictures, and save their favorite parks to a list. The following days I made quick progress building the Express back-end and React front-end, and I was displaying NPS park information on the page by midweek.
+                </p>
+                <p>
+                  I found myself as a design crossroads when I started working with the user's favorite parks list. The client was storing the user's favorite parks in state as a series of park codes instead of the full park data. This data wasn't very useful and would require a complicated api call chain that seemed error prone, and violated the single responsibility principal. I was tempted to find a quick workaround so I could move on to the flashier v2 features of the app. But rather than pushing forward with a poor design decision, I decided to refactor both the front-end and back-end so that I could keep my code base DRY, limit calls to the NPS third-party API, and enforce a streamlined data flow.
+                </p>
+              </div>
+            </div>
+            <div class='double'>
+              <div class="card bg-secondary h-100" style="width: 18rem;">
+                <img class="card-img-top" src="public/images/tic tac toe.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">tic tac toe</h5>
+                  <p class="card-text">First Project for WDI...</p>
+                  <a href="https://natesuri.github.io/tic-tac-toe/" class="btn btn-light">Visit the Deployed Site</a>
+                </div>
+              </div>
+              <div class='text'>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
