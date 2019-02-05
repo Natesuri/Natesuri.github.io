@@ -4,7 +4,7 @@
 
 [class^="devicon-"],
 [class*=" devicon-"] {
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .nav-color {
@@ -93,7 +93,15 @@ section.view {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 60px;
+  align-items: center;
+
+  div {
+    padding: 5px 0;
+  }
+}
+
+.about {
+  width: 80%;
 }
 
 .text {
@@ -137,12 +145,13 @@ section.view {
   align-items: center;
   width: 100%;
   text-align: justify;
-  height: 100%;
+  flex-grow: 1;
 }
 
 .tech {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 
   div {
     background: #f1c40f;
@@ -163,7 +172,6 @@ section.view {
   background: #7f8c8d;
   border-radius: 20px;
   width: 35vw;
-  height: 100%;
 }
 
 .tile-image {
@@ -203,9 +211,11 @@ section.view {
 }
 
 .project-body {
+  display: flex;
   padding: 0;
   margin: 20px 40px 10px;
   width: 100%;
+  flex-direction: column;
 }
 
 .list {
@@ -278,6 +288,75 @@ section.view {
   justify-content: center;
   margin: 0 auto;
   // padding: 0;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 100px 0 0;
+  }
+
+  .double {
+    flex-direction: column;
+    text-align: justify;
+
+    h2 {
+      text-align: center;
+      font-size: 25px;
+      border-bottom: 1px solid white;
+      padding-bottom: 20px;
+    }
+  }
+
+  .skills {
+    padding: 20px 0 10px 0;
+    text-align: center;
+  }
+
+  .skills-list {
+    padding: 0;
+  }
+
+  .lead {
+    h3 {
+      font-size: 25px;
+      padding: 20px;
+    }
+
+    p {
+      font-size: 14px;
+      text-align: justify;
+    }
+  }
+
+  .project {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  .tile {
+    width: 100%;
+  }
+
+  .tile-links {
+    padding: 0;
+
+    a {
+      margin: 0;
+    }
+  }
+
+  .project-body {
+    width: auto;
+    margin: 12px;
+  }
+
+  .tech {
+    flex-wrap: wrap;
+
+    div {
+      margin: 3px;
+    }
+  }
 }
 
 // .hero {
