@@ -4,7 +4,7 @@
 
 [class^="devicon-"],
 [class*=" devicon-"] {
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .nav-color {
@@ -305,6 +305,15 @@ section.view {
       border-bottom: 1px solid white;
       padding-bottom: 20px;
     }
+  }
+
+  .skills {
+    padding: 20px 0 10px 0;
+    text-align: center;
+  }
+
+  .skills-list {
+    padding: 0;
   }
 
   .lead {
